@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Textarea</title>
-<style>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Textarea</title>
+  <style>
   @font-face {
     font-family: 'FontWithASyntaxHighlighter';
     src: url('FontWithASyntaxHighlighter-Regular.woff2') format('woff2');
@@ -41,8 +43,10 @@
     text-wrap-style: pretty;
     overflow-wrap: break-word;
   }
-</style>
-<article contenteditable="plaintext-only" spellcheck></article>
+  </style>
+</head>
+<body>
+  <article contenteditable="plaintext-only" spellcheck></article>
 <script>
   const article = document.querySelector('article')
   article.addEventListener('input', debounce(500, save))
@@ -116,3 +120,5 @@
     }
   }
 </script>
+</body>
+</html>
