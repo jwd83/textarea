@@ -3,6 +3,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Textarea</title>
 <style>
+  @font-face {
+    font-family: 'FontWithASyntaxHighlighter';
+    src: url('FontWithASyntaxHighlighter-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -25,7 +33,7 @@
     padding: 18px max(18px, calc(50vw - 400px));
     width: 100%;
     min-height: 100vh;
-    font: 18px / 1.5 system-ui;
+    font: 18px / 1.5 'FontWithASyntaxHighlighter', monospace;
     tab-size: 4;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
